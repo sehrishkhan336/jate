@@ -1,0 +1,38 @@
+{
+  "name": "JATE",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start:dev": "concurrently \"cd client && npm run build\" \"cd server && npm run server\" ",
+    "start": "npm run build && cd server && node server.js",
+    "server": "cd server node server.js --ignore client",
+    "build": "cd client && npm run build",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "client": "cd client && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.8.1",
+    "express": "^4.17.1",
+    "http-server": "^14.1.1",
+    "idp": "^0.0.0",
+    "if-env": "^1.0.4",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "webpack-pwa-manifest": "^4.3.0",
+    "workbox-window": "^7.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "nodemon": "^2.0.4",
+    "workbox-webpack-plugin": "^7.0.0"
+  }
+}
