@@ -31,20 +31,20 @@ module.exports = () => {
         swSrc: './src/sw.js',
         swDest: 'sw.js',
       }), 
-      // new WebpackPwaManifest({
-      //   name: 'Jate App',
-      //   short_name: 'Jate',
-      //   description: 'A simple app to help you find recipes for your favorite meals.',
-      //   background_color: '#ffffff',
-      //   theme_color: '#000000',
-      //   icons: [
-      //     {
-      //       src: path.resolve('src/assets/icons/icon-512x512.png'),
-      //       sizes: [72, 96, 128, 144, 192, 384, 512],
-      //       destination: path.join('assets', 'icons'),
-      //     },
-      //   ],
-      // }),
+      new WebpackPwaManifest({
+        name: 'Jate App',
+        short_name: 'Jate',
+        description: 'A simple app to help you find recipes for your favorite meals.',
+        background_color: '#ffffff',
+        theme_color: '#000000',
+        icons: [
+          {
+            src: path.resolve('src/images/logo.png'),
+            sizes: [72, 96, 128, 144, 192, 384, 512],
+            destination: path.join('assets', 'icons'),
+          },
+        ],
+      }),
     ],
 
     module: {
