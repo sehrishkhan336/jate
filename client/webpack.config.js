@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const WorkboxPlugin = require('workbox-webpack-plugin');
+// const WorkboxPlugin = require('workbox-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const { InjectManifest } = require('workbox-webpack-plugin');
 
@@ -27,9 +27,9 @@ module.exports = () => {
         title: 'Jate',
       }),
       new MiniCssExtractPlugin(),
-      new WorkboxPlugin.InjectManifest({
-        swSrc: './src/sw.js',
-        swDest: 'sw.js',
+      new InjectManifest({
+        swSrc: './src-sw.js',
+        swDest: 'src-sw.js',
       }), 
       new WebpackPwaManifest({
         name: 'Jate App',
@@ -37,10 +37,12 @@ module.exports = () => {
         description: 'A simple app to help you find recipes for your favorite meals.',
         background_color: '#ffffff',
         theme_color: '#000000',
+        start_url: './',
+        publicPath: './',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
-            sizes: [72, 96, 128, 144, 192, 384, 512],
+            sizes: [96, 128, 192, 256, 384, 512],
             destination: path.join('assets', 'icons'),
           },
         ],
