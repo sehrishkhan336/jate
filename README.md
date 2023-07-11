@@ -1,19 +1,38 @@
 # 19 Progressive Web Applications (PWA): Text Editor
 
-## 
+## Description
+Jate Application is a tool that allows users to create and manage their notes or code snippets. It offers a wide range of features and functionalities to enhance the editing experience while ensuring reliable access to content with or without an internet connection. Let's explore the key aspects of the application based on the given requirements.
+
+## Client-Server Folder Structure
+When you open the application in your editor, you will find a well-organized client-server folder structure. This structure enables easy navigation and maintenance of the codebase, providing separate directories for the client-side code (in the client folder) and the server-side code (in the server folder).
+
+## Backend and Client Startup
+By running npm run start from the root directory, the application initiates both the backend and the client. The backend server starts up and serves the client, enabling seamless communication between the client and server components.
+
+## Installation
+following plugins were installed for this app:
+  * workbox-webpack-plugin
+
+  * html-webpack-plugin
+  * babel-loader
+  * IndexedDB Database
+  * concurrently (Dev dependency)
+  * webpack-pwa-manifest
 
 
-## User Story
+## Usage
+For the usage of this app please follow the below instructions:
+
+* In your terminal please type following to install all the plugins:
+       npm install.
+* To run the app please type following to run the application: 
+        npm run start
+
+## Screenshot of the App
 
 
-## Acceptance Criteria
 
-
-## Mock-Up
-
-The following animation demonstrates the application functionality:
-
-![Demonstration of the finished Module 19 Challenge being used in the browser and then installed.](./Assets/00-demo.gif)
+![Screenshot of the app](./Assets/00-demo.gif)
 
 The following image shows the application's `manifest.json` file:
 
@@ -27,29 +46,16 @@ The following image shows the application's IndexedDB storage:
 
 ![Demonstration of the finished Module 19 Challenge with a IndexedDB storage named 'jate' in the browser.](./Assets/03-idb-storage.png)
 
-## Grading Requirements
+## Link to the App
+
+Heroku App Link:    https://gentle-reef-21101-af1dcb27f2f0.herokuapp.com/
+GITHUB Repo Link:    https://github.com/sehrishkhan336/jate/tree/master
+
+
+## License
 
 
 
-### Technical Acceptance Criteria: 40%
+## Reference
 
 
-
-### Deployment: 32%
-
-
-
-### Application Quality: 15%
-
-
-
-### Repository Quality: 13%
-
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
