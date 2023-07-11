@@ -30,21 +30,8 @@ For the usage of this app please follow the below instructions:
 
 ## Screenshot of the App
 
+![Screenshot of the app](./images/Screenshot%20(255).png)
 
-
-![Screenshot of the app](./Assets/00-demo.gif)
-
-The following image shows the application's `manifest.json` file:
-
-![Demonstration of the finished Module 19 Challenge with a manifest file in the browser.](./Assets/01-manifest.png)
-
-The following image shows the application's registered service worker:
-
-![Demonstration of the finished Module 19 Challenge with a registered service worker in the browser.](./Assets/02-service-worker.png)
-
-The following image shows the application's IndexedDB storage:
-
-![Demonstration of the finished Module 19 Challenge with a IndexedDB storage named 'jate' in the browser.](./Assets/03-idb-storage.png)
 
 ## Link to the App
 
@@ -53,9 +40,13 @@ GITHUB Repo Link:    https://github.com/sehrishkhan336/jate/tree/master
 
 
 ## License
+This project is licensed under the MIT license. See the LICENSE.md file for more details.
 
-
+##  CONTACT INFORMATION:
+If you have any questions or feedback about this project, you can contact the project owner [Sehrish Khan, contact information: sehrishkhan336@gmail.com].
 
 ## Reference
-
+* Slack Bot 
+* Tutoring Session  helped me resolve the Putdb and install.
+* Office hours to resolve the 404 error
 
